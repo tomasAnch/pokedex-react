@@ -3,6 +3,7 @@ import { PokeballIconSmall } from "../../assets/pokeball"
 import styles from './styles.module.scss'
 
 export const Home = () => {
+
   return (
     <div className={styles.home}>
       <header>
@@ -13,4 +14,5 @@ export const Home = () => {
       </header>
     </div>
   )
+
 }
