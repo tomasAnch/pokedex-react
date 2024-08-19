@@ -33,7 +33,6 @@ const PokemonProvider = ({ children }) => {
   const getPokemonsType = async() => {
     const { data } = await axios.get('https://pokeapi.co/api/v2/type');
 
-    console.log(data)
     setTypes([ ...types, ...data.results ]);
   };
 
