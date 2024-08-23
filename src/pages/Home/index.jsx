@@ -6,6 +6,7 @@ import { PokemonContext } from "../../context/PokemonContext"
 import styles from './styles.module.scss'
 import { Pagination } from "../../components/Pagination"
 import { usePagination } from "../../hooks/usePagination"
+import { Filters } from "../../components/Filters"
 
 export const Home = () => {
 
@@ -17,11 +18,12 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <header>
-        <div>
+        <div onClick={ backToHome }>
           <PokeballIconSmall />
           <span>Pokédex</span>
         </div>
       </header>
+      <Filters />
       <PokemonList
         page={ page }
         perPage={ perPage } 

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { usePokemon } from "../../hooks/usePokemon";
-import { background } from "../../utils/BackgroundByType";
+import { background } from "../../utils/BackgroundsByType";
 import { Loader } from "../Loader";
 
 import styles from "./styles.module.scss";
